@@ -1,11 +1,11 @@
-// ¿¹¿Ü(Exception)Ã³¸®
-// ¿À·ùÃ³¸®
-// ¿À·ù: ÄÄÆÄÀÏ»ó¿¡¼­ ¹ß»ı, ½ÇÇà(·±Å¸ÀÓ)¿¡¼­ ¹ß»ı
-// ÇÁ·Î±×·¥ ¼öÇàÁß ¹ß»ıµÈ ¿À·ù¿¡ ´ëÇØ¼­´Â µğ¹ö±ëÀ» ÅëÇØ ¼öÁ¤ÇØ ³ª°¡¾ßÇÑ´Ù.
-// ½ÇÇàÁß¿¡ ¹ß»ıÇÑ ¿À·ù´Â ÇÇÇØ°¡¾ß ÇÔ(Áß°£¿¡ ÇÁ·Î±×·¥ÀÌ ¸ØÃßÁö ¾Êµµ·Ï Á¶Ä¡.)
-// throw¶õ ÇöÀç »óÈ²¿¡¼­ ¹ß»ıÇÑ ¿À·ùÁ¤º¸¸¦ ´øÁ®ÁØ´Ù´Â °³³ä.
-// error´Â ÄÄÇ»ÅÍÀÚÃ¼¿¡ ¹®Á¦°¡ »ı°Ü¼­ ¹ß»ıÇÑ ¿À·ù. (ÄÄÇ»ÅÍ ½Ã½ºÅÛÀûÀÎ ¹®Á¦)
-// ExceptionÀº
+// ì˜ˆì™¸(Exception)ì²˜ë¦¬
+// ì˜¤ë¥˜ì²˜ë¦¬
+// ì˜¤ë¥˜: ì»´íŒŒì¼ìƒì—ì„œ ë°œìƒ, ì‹¤í–‰(ëŸ°íƒ€ì„)ì—ì„œ ë°œìƒ
+// í”„ë¡œê·¸ë¨ ìˆ˜í–‰ì¤‘ ë°œìƒëœ ì˜¤ë¥˜ì— ëŒ€í•´ì„œëŠ” ë””ë²„ê¹…ì„ í†µí•´ ìˆ˜ì •í•´ ë‚˜ê°€ì•¼í•œë‹¤.
+// ì‹¤í–‰ì¤‘ì— ë°œìƒí•œ ì˜¤ë¥˜ëŠ” í”¼í•´ê°€ì•¼ í•¨(ì¤‘ê°„ì— í”„ë¡œê·¸ë¨ì´ ë©ˆì¶”ì§€ ì•Šë„ë¡ ì¡°ì¹˜.)
+// throwë€ í˜„ì¬ ìƒí™©ì—ì„œ ë°œìƒí•œ ì˜¤ë¥˜ì •ë³´ë¥¼ ë˜ì ¸ì¤€ë‹¤ëŠ” ê°œë….
+// errorëŠ” ì»´í“¨í„°ìì²´ì— ë¬¸ì œê°€ ìƒê²¨ì„œ ë°œìƒí•œ ì˜¤ë¥˜. (ì»´í“¨í„° ì‹œìŠ¤í…œì ì¸ ë¬¸ì œ)
+// Exceptionì€
 
 public class Example01 {
 
@@ -16,11 +16,11 @@ public class Example01 {
 
 	
 	public static void test1() {
-		//ArithmeticException Exception:Å¬·¡½ºÀÇ »ó¼ÓÀ» ¹Ş¾Æ¼­ Arithmetic
+		//ArithmeticException Exception:í´ë˜ìŠ¤ì˜ ìƒì†ì„ ë°›ì•„ì„œ Arithmetic
 		int number1 = 10, number2 = 0, result;
 		result = number1 / number2;
 		System.out.println(result);
-		// Ãâ·Â½Ã Exception in thread ¿À·ù¹ß»ı
+		// ì¶œë ¥ì‹œ Exception in thread ì˜¤ë¥˜ë°œìƒ
 		
 		
 	}
@@ -40,8 +40,8 @@ public class Example01 {
 	}
 	
 	public static void test4() {
-		//NullPointerException: s´Â ¹®ÀÚ¿­À» °¡¸£Å°´Â Æ÷ÀÎÅÍ. °´Ã¼°¡ Á¸Àçx
-		String s = null; //null·Î ÃÊ±âÈ­
+		//NullPointerException: sëŠ” ë¬¸ìì—´ì„ ê°€ë¥´í‚¤ëŠ” í¬ì¸í„°. ê°ì²´ê°€ ì¡´ì¬x
+		String s = null; //nullë¡œ ì´ˆê¸°í™”
 		int len = s.length();
 		System.out.println(len);
 	}
@@ -55,7 +55,7 @@ public class Example01 {
 	public static void test6() {
 		//NumberFormatException
 		String s = "Hello";
-		int number = Integer.parseInt(s);//parseInt¸Ş¼Òµå´Â s¸¦ Á¤¼ö·Î ¹Ù²ãÁÖ´Â ¸Ş¼Òµå.
+		int number = Integer.parseInt(s);//parseIntë©”ì†Œë“œëŠ” së¥¼ ì •ìˆ˜ë¡œ ë°”ê¿”ì£¼ëŠ” ë©”ì†Œë“œ.
 		System.out.println(number);
 	}
 	

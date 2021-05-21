@@ -5,19 +5,19 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-// ÄÄÆ÷³ÍÆ® : ¹öÆ°, ·¹ÀÌºí, ¶óµğ¿À¹öÆ°, Ã¼Å©¹Ú½º µî
-// ÀÏ¹İ ÄÄÆ÷³ÍÆ®
-// ÄÁÅ×ÀÌ³Ê : ÀÏ¹İ ÄÄÆ÷³ÍÆ®³ª ÄÁÅ×ÀÌ³Ê¸¦ ´ãÀ» ¼ö ÀÖ´Â ÄÄÆ÷³ÍÆ® (ÇÁ·¹ÀÓ, ÆĞ³Î)
-// ·¹ÀÌ¾Æ¿ô(¹èÄ¡°ü¸®ÀÚ : ÄÄÆ÷³ÍÆ®ÀÇ ¹èÄ¡¹æ¹ı)
-// ±âº»ÀûÀÎ °ªÀº default·Î ÁöÁ¤µÇ¾îÀÖÀ½.
+// ì»´í¬ë„ŒíŠ¸ : ë²„íŠ¼, ë ˆì´ë¸”, ë¼ë””ì˜¤ë²„íŠ¼, ì²´í¬ë°•ìŠ¤ ë“±
+// ì¼ë°˜ ì»´í¬ë„ŒíŠ¸
+// ì»¨í…Œì´ë„ˆ : ì¼ë°˜ ì»´í¬ë„ŒíŠ¸ë‚˜ ì»¨í…Œì´ë„ˆë¥¼ ë‹´ì„ ìˆ˜ ìˆëŠ” ì»´í¬ë„ŒíŠ¸ (í”„ë ˆì„, íŒ¨ë„)
+// ë ˆì´ì•„ì›ƒ(ë°°ì¹˜ê´€ë¦¬ì : ì»´í¬ë„ŒíŠ¸ì˜ ë°°ì¹˜ë°©ë²•)
+// ê¸°ë³¸ì ì¸ ê°’ì€ defaultë¡œ ì§€ì •ë˜ì–´ìˆìŒ.
 
 class LayoutFrame1 extends JFrame{
 	public LayoutFrame1() {
 		// TODO Auto-generated method stub
-		setTitle("·¹ÀÌ¾Æ¿ô Å×½ºÆ®1");
+		setTitle("ë ˆì´ì•„ì›ƒ í…ŒìŠ¤íŠ¸1");
 		setSize(500, 500);
 		setLocationRelativeTo(null);
-		//¹«Á¶°Ç È­¸é Á¤Áß¾Ó¿¡ À§Ä¡ÇÏ°í½ÍÀ»¶§
+		//ë¬´ì¡°ê±´ í™”ë©´ ì •ì¤‘ì•™ì— ìœ„ì¹˜í•˜ê³ ì‹¶ì„ë•Œ
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
@@ -25,26 +25,26 @@ class LayoutFrame1 extends JFrame{
 class LayoutFrame2 extends JFrame{
 	public LayoutFrame2() {
 		// TODO Auto-generated method stub
-		setTitle("·¹ÀÌ¾Æ¿ô Å×½ºÆ®2");
+		setTitle("ë ˆì´ì•„ì›ƒ í…ŒìŠ¤íŠ¸2");
 		setSize(500, 500);
 		setLocationRelativeTo(null);
-		// ¹«Á¶°Ç È­¸é Á¤Áß¾Ó¿¡ À§Ä¡ÇÏ°í½ÍÀ»¶§
+		// ë¬´ì¡°ê±´ í™”ë©´ ì •ì¤‘ì•™ì— ìœ„ì¹˜í•˜ê³ ì‹¶ì„ë•Œ
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// Flow Layout : ÄÄÆ÷³ÍÆ®¸¦ ¼øÂ÷ÀûÀ¸·Î ¹èÄ¡
+		// Flow Layout : ì»´í¬ë„ŒíŠ¸ë¥¼ ìˆœì°¨ì ìœ¼ë¡œ ë°°ì¹˜
 		FlowLayout flow1 = new FlowLayout();
-		// ·¹ÀÌ¾Æ¿ôÀ» ÇÁ·¹ÀÓ¿¡ ÁöÁ¤
-		// °¡·ÎÁß¾ÓÁ¤·Ä, °£°İ hgap=5, vgap=5
+		// ë ˆì´ì•„ì›ƒì„ í”„ë ˆì„ì— ì§€ì •
+		// ê°€ë¡œì¤‘ì•™ì •ë ¬, ê°„ê²© hgap=5, vgap=5
 		FlowLayout flow2 = new FlowLayout(FlowLayout.LEFT, 50, 50);
-		// ¿ŞÂÊÁ¤·Ä
+		// ì™¼ìª½ì •ë ¬
 		setLayout(flow2);
-		// flow1 È¤Àº flow2ÀÇ ·¹ÀÌ¾Æ¿ôÀ» ÁöÁ¤
+		// flow1 í˜¹ì€ flow2ì˜ ë ˆì´ì•„ì›ƒì„ ì§€ì •
 		
 		
-		JButton btnOK = new JButton("È®ÀÎ");
+		JButton btnOK = new JButton("í™•ì¸");
 		this.add(btnOK);
 		
-		JButton btnCancel = new JButton("Ãë¼Ò");
+		JButton btnCancel = new JButton("ì·¨ì†Œ");
 		this.add(btnCancel);
 		
 		
@@ -56,21 +56,21 @@ class LayoutFrame2 extends JFrame{
 class LayoutFrame3 extends JFrame{
 	public LayoutFrame3() {
 		// TODO Auto-generated method stub
-		setTitle("·¹ÀÌ¾Æ¿ô Å×½ºÆ®3");
+		setTitle("ë ˆì´ì•„ì›ƒ í…ŒìŠ¤íŠ¸3");
 		setSize(500, 500);
 		setLocationRelativeTo(null);
-		// ¹«Á¶°Ç È­¸é Á¤Áß¾Ó¿¡ À§Ä¡ÇÏ°í½ÍÀ»¶§
+		// ë¬´ì¡°ê±´ í™”ë©´ ì •ì¤‘ì•™ì— ìœ„ì¹˜í•˜ê³ ì‹¶ì„ë•Œ
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// Border Layout : ÄÁÅ×ÀÌ³Ê °ø°£À» µ¿, ¼­, ³², ºÏ Áß¾Ó
+		// Border Layout : ì»¨í…Œì´ë„ˆ ê³µê°„ì„ ë™, ì„œ, ë‚¨, ë¶ ì¤‘ì•™
 		BorderLayout border = new BorderLayout(20, 20);
 		setLayout(border);
 		
-		// ÄÄÆ÷³ÍÆ®¸¦ µ¿,¼­,³²,ºÏÀ¸·Î ÁöÁ¤.
-		JButton btnOK = new JButton("È®ÀÎ");
+		// ì»´í¬ë„ŒíŠ¸ë¥¼ ë™,ì„œ,ë‚¨,ë¶ìœ¼ë¡œ ì§€ì •.
+		JButton btnOK = new JButton("í™•ì¸");
 		this.add(btnOK, BorderLayout.WEST);
 		
-		JButton btnCancel = new JButton("Ãë¼Ò");
+		JButton btnCancel = new JButton("ì·¨ì†Œ");
 		this.add(btnCancel, BorderLayout.EAST);
 		JButton btnA = new JButton("A");
 		this.add(btnA, BorderLayout.NORTH);
@@ -87,13 +87,13 @@ class LayoutFrame3 extends JFrame{
 class LayoutFrame4 extends JFrame{
 	public LayoutFrame4() {
 		// TODO Auto-generated method stub
-		setTitle("·¹ÀÌ¾Æ¿ô Å×½ºÆ®4");
+		setTitle("ë ˆì´ì•„ì›ƒ í…ŒìŠ¤íŠ¸4");
 		setSize(500, 500);
 		setLocationRelativeTo(null);
-		//¹«Á¶°Ç È­¸é Á¤Áß¾Ó¿¡ À§Ä¡ÇÏ°í½ÍÀ»¶§
+		//ë¬´ì¡°ê±´ í™”ë©´ ì •ì¤‘ì•™ì— ìœ„ì¹˜í•˜ê³ ì‹¶ì„ë•Œ
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// Grid Layout : ÄÁÅ×ÀÌ³Ê¸¦ °İÀÚ¸ğ¾ç (Å×ÀÌºí)
+		// Grid Layout : ì»¨í…Œì´ë„ˆë¥¼ ê²©ìëª¨ì–‘ (í…Œì´ë¸”)
 		GridLayout grid = new GridLayout(3,6);
 		setLayout(grid);
 		
@@ -121,14 +121,14 @@ class LayoutFrame4 extends JFrame{
 class LayoutFrame5 extends JFrame{
 	public LayoutFrame5() {
 		// TODO Auto-generated method stub
-		setTitle("·¹ÀÌ¾Æ¿ô Å×½ºÆ®5");
+		setTitle("ë ˆì´ì•„ì›ƒ í…ŒìŠ¤íŠ¸5");
 		setSize(500, 500);
 		setLocationRelativeTo(null);
-		// ¹«Á¶°Ç È­¸é Á¤Áß¾Ó¿¡ À§Ä¡ÇÏ°í½ÍÀ»¶§
+		// ë¬´ì¡°ê±´ í™”ë©´ ì •ì¤‘ì•™ì— ìœ„ì¹˜í•˜ê³ ì‹¶ì„ë•Œ
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// ¹èÄ¡°ü¸®ÀÚ°¡ ¾ø´Â °æ¿ì
-		// °³¹ßÀÚ°¡ ÄÄÆ÷³ÍÆ®ÀÇ À§Ä¡¸¦ Á÷Á¢ ÁöÁ¤
+		// ë°°ì¹˜ê´€ë¦¬ìê°€ ì—†ëŠ” ê²½ìš°
+		// ê°œë°œìê°€ ì»´í¬ë„ŒíŠ¸ì˜ ìœ„ì¹˜ë¥¼ ì§ì ‘ ì§€ì •
 		setLayout(null);
 		
 		JButton btnA = new JButton("A");
@@ -137,9 +137,9 @@ class LayoutFrame5 extends JFrame{
 		btnA.setLocation(100, 100);
 		
 		for(int count = 1; count <= 5; count++) {
-			// ¹öÆ°ÀÇ ÀÌ¸§Àº ¹®ÀÚ¿­
+			// ë²„íŠ¼ì˜ ì´ë¦„ì€ ë¬¸ìì—´
 			JButton btn = new JButton(Integer.toString(count));
-			// Integer.toString Á¤¼ö°ªÀ» ¹®ÀÚ¿­·Î ¹Ù²Ù¾îÁÖ´Â°Í.
+			// Integer.toString ì •ìˆ˜ê°’ì„ ë¬¸ìì—´ë¡œ ë°”ê¾¸ì–´ì£¼ëŠ”ê²ƒ.
 			btn.setSize(50, 50);
 			btn.setLocation(count*50, count*50);
 			this.add(btn);
@@ -160,19 +160,19 @@ public class Example05 {
 
 	public static void test1() {
 		LayoutFrame1 myframe = new LayoutFrame1();
-		// ¹öÆ°ÀÇ Á¤ÀÇ (JButton Å¬·¡½º¸¦ È°¿ë)
-		JButton btnOK = new JButton("È®ÀÎ");
-		// »ı¼ºÀÚ¸¦ ÅëÇØ¼­ ÀÌ¸§À» ÁöÁ¤.
+		// ë²„íŠ¼ì˜ ì •ì˜ (JButton í´ë˜ìŠ¤ë¥¼ í™œìš©)
+		JButton btnOK = new JButton("í™•ì¸");
+		// ìƒì„±ìë¥¼ í†µí•´ì„œ ì´ë¦„ì„ ì§€ì •.
 		myframe.add(btnOK);
 		
-		JButton btnCancel = new JButton("Ãë¼Ò");
-		// »ı¼ºÀÚ¸¦ ÅëÇØ¼­ ÀÌ¸§À» ÁöÁ¤.
+		JButton btnCancel = new JButton("ì·¨ì†Œ");
+		// ìƒì„±ìë¥¼ í†µí•´ì„œ ì´ë¦„ì„ ì§€ì •.
 		myframe.add(btnCancel);
 		
 		myframe.setVisible(true);
 
-		// ÇÁ·¹ÀÓÀÇ ±âº» ·¹ÀÌ¾Æ¿ôÀº Border LayoutÀÌ±â¶§¹®¿¡ È­¸éÀÇ Æ²¿¡ ²ËÂ÷°Ô ³ª¿È.
-		// È®ÀÎ¹öÆ° À§¿¡ Ãë¼Ò¹öÆ°ÀÌ ¿Ã¶ó°¡¹ö¸² -> ¹èÄ¡°ü¸®ÀÚÀÇ ÇÊ¿ä¼º!
+		// í”„ë ˆì„ì˜ ê¸°ë³¸ ë ˆì´ì•„ì›ƒì€ Border Layoutì´ê¸°ë•Œë¬¸ì— í™”ë©´ì˜ í‹€ì— ê½‰ì°¨ê²Œ ë‚˜ì˜´.
+		// í™•ì¸ë²„íŠ¼ ìœ„ì— ì·¨ì†Œë²„íŠ¼ì´ ì˜¬ë¼ê°€ë²„ë¦¼ -> ë°°ì¹˜ê´€ë¦¬ìì˜ í•„ìš”ì„±!
 		
 	}
 	

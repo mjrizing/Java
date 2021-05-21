@@ -1,7 +1,7 @@
-// ¿¹¿ÜÃ³¸® : Try ~ catch ~ (finally) 3°¡Áö¸¦ ¹­¾î¼­ Ã³¸®
-// Try : ¿¹¿Ü°¡ ¹ß»ıÇÒ ¼ö ÀÖ´Â ÄÚµåµé
-// catch : ¿¹¿Ü¸¦ Ã³¸®ÇÏ´Â ÄÚµå
-// finally : ¿¹¿Ü¿Í »ó°ü¾øÀÌ Ã³¸®ÇÏ´Â ¹®Àå
+// ì˜ˆì™¸ì²˜ë¦¬ : Try ~ catch ~ (finally) 3ê°€ì§€ë¥¼ ë¬¶ì–´ì„œ ì²˜ë¦¬
+// Try : ì˜ˆì™¸ê°€ ë°œìƒí•  ìˆ˜ ìˆëŠ” ì½”ë“œë“¤
+// catch : ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ëŠ” ì½”ë“œ
+// finally : ì˜ˆì™¸ì™€ ìƒê´€ì—†ì´ ì²˜ë¦¬í•˜ëŠ” ë¬¸ì¥
 
 
 public class Example02 {
@@ -15,11 +15,11 @@ public class Example02 {
 		int number1 = 10, number2 = 0, result = 0;
 		
 		try {
-			result = number1 / number2;//ÀáÀçÀû ¿¹¿Ü¹ß»ı °¡´É
+			result = number1 / number2;//ì ì¬ì  ì˜ˆì™¸ë°œìƒ ê°€ëŠ¥
 			
-		}catch(ArithmeticException exp){ //¹ß»ıÇÒ ¿¹¿Ü¸¦ ¸í½Ã
+		}catch(ArithmeticException exp){ //ë°œìƒí•  ì˜ˆì™¸ë¥¼ ëª…ì‹œ
 			System.out.println(exp);
-			//°á°ú°ªÀ¸·Î ArithmeticExceptionÃâ·Â.
+			//ê²°ê³¼ê°’ìœ¼ë¡œ ArithmeticExceptionì¶œë ¥.
 		}finally {
 			System.out.println(result);
 		}
@@ -30,7 +30,7 @@ public class Example02 {
 			a[4] = 40;
 				
 		}catch(ArrayIndexOutOfBoundsException exp) {
-				System.out.println("¹è¿­ Á¢±Ù¿¡ ¹®Á¦°¡ ÀÖ½À´Ï´Ù.");
+				System.out.println("ë°°ì—´ ì ‘ê·¼ì— ë¬¸ì œê°€ ìˆìŠµë‹ˆë‹¤.");
 		}
 	}
 		
@@ -42,10 +42,10 @@ public class Example02 {
 			try {int result = number / div[count];
 				
 			}catch(ArithmeticException exp) {
-				System.out.println("0À¸·Î ³ª´©¾ú¾î¿ä.");
+				System.out.println("0ìœ¼ë¡œ ë‚˜ëˆ„ì—ˆì–´ìš”.");
 				
 			}catch(ArrayIndexOutOfBoundsException exp) {
-			System.out.println("¹è¿­ÀÇ ¹ıÀ§¸¦ ¹ş¾î³²");
+			System.out.println("ë°°ì—´ì˜ ë²•ìœ„ë¥¼ ë²—ì–´ë‚¨");
 		}
 		}
 	}
